@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# ElectorZ - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ElectorZ is a political game based on geographical strategies.
 
-## Available Scripts
+This repository hosts the frontend of the ElectorZ web application, written in [React](https://reactjs.org). The code of the backend is available in the [Electorz Backend repository](https://github.com/just1not2/electorz-backend).
 
-In the project directory, you can run:
+## Configuration
 
-### `npm start`
+The entire project configuration is defined in an environment file, of which [a template](./.env.template) is present in the repository. To bootstrap the configuration, launch the following command:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+cp .env.template .env
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You may then modify the following environment variables to configure the ElectorZ frontend:
+* `REACT_APP_FRONT_URL`: URL of the frontend
+* `REACT_APP_BACK_URL`: URL of the backend
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+You can install the `npm` dependencies by launching the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Besides, the ElectorZ backend must be launched for the frontend application to work. The easiest way to meet this requirement is to clone the [ElectorZ Backend repository](https://github.com/just1not2/electorz-backend) and follow its README.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Launching the application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The ElectorZ frontend application may be launched with the following command:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You may then visit http://localhost:3000 to test the website locally.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## See Also
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [ReactJS official documentation](https://reactjs.org)
+* [React-Leaflet documentation](https://react-leaflet.js.org)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Contributing to this application
+
+This application started as personal project, but I welcome community contributions to it. If you find problems, please open an issue or create a PR against the [ElectorZ Frontend repository](https://github.com/just1not2/electorz-frontend).
+
+You can also reach me by email at `me@just1not2.org`.
+
+
+## Licensing
+
+Mozilla Public License Version 2.0.
+
+See [LICENSE](./LICENSE) to see the full text.
+
+
+## Author Information
+
+This application was created in 2022 by Justin Béra.

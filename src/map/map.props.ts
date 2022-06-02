@@ -3,14 +3,8 @@
   Mozilla Public License Version 2.0 (see LICENSE or https://www.mozilla.org/en-US/MPL/2.0/)
 */
 
-import React from 'react';
-import 'leaflet/dist/leaflet.css';
-import Map from './map/Map';
+type MapProps = {
+  id: number;
+};
 
-function App() {
-  return (
-    <Map id={1} />
-  );
-}
-
-export default App;
+export default MapProps;
